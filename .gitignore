@@ -1,0 +1,5 @@
+
+# For project folders
+.idea
+
+*.min.min.*
