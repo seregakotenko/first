@@ -3,86 +3,13 @@
 //
 @import "smart-grid";
 @import "reset";
+@import "layout";
+@import "header";
+@import "footer";
+@import "aside";
+@import "main";
+@import "debug";
 
 .red {
   color: green;
-}
-
-.content {
-  @include wrapper();
-}
-
-.wrapper {
-  @include row-flex();
-}
-
-.header {
-  color: green;
-  background-color: rgba(0, 255, 0, .1);
-
-  &__wrapper {
-    @include wrapper();
-  }
-
-  &__items {
-    @include row-flex();
-  }
-
-  &__item {
-    @include col();
-    @include size(3);
-
-    background-color: rgba(255, 255, 0, 1);
-  }
-}
-
-.aside {
-  @include size-lg(3);
-  @include size-md(3);
-  @include size-xs(12);
-  @include size(12);
-  @include col();
-
-  background-color: rgba(255, 0, 255, .2);
-
-}
-
-.aside-nav {
-
-  &__link {
-    display: inline-block;
-    width: 100%;
-  }
-}
-
-.main {
-  @include size-lg(9);
-  @include size-md(9);
-  @include size-xs(12);
-  @include size(9);
-  @include col();
-
-  background-color: rgba(0, 255, 255, .2);
-}
-
-.article {
-  background-color: rgba(155, 155, 155, .2);
-}
-
-.footer {
-  background-color: rgba(0, 0, 0, .1);
-
-  &__wrapper {
-    @include wrapper();
-    //@include row-flex();
-  }
-}
-
-.debug {
-  @include debug(rgba(255, 150, 255, 0.3), 1px solid rgba(255, 150, 255, 0.3));
-
-  &,
-  > * {
-    pointer-events: none;
-  }
 }

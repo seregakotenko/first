@@ -1,0 +1,22 @@
+//
+// Aside
+//
+
+.aside {
+  @include size-lg(3);
+  @include size-md(3);
+  @include size-xs(12);
+  @include size(12);
+  @include col();
+
+  background-color: rgba(255, 0, 255, .2);
+
+}
+
+.aside-nav {
+
+  &__link {
+    display: inline-block;
+    width: 100%;
+  }
+}

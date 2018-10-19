@@ -1,0 +1,23 @@
+//
+// Header
+//
+
+.header {
+  color: green;
+  background-color: rgba(0, 255, 0, .1);
+
+  &__wrapper {
+    @include wrapper();
+  }
+
+  &__items {
+    @include row-flex();
+  }
+
+  &__item {
+    @include col();
+    @include size(3);
+
+    background-color: rgba(255, 255, 0, 1);
+  }
+}

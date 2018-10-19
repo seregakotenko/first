@@ -1,0 +1,11 @@
+//
+// Layout
+//
+
+.content {
+  @include wrapper();
+}
+
+.wrapper {
+  @include row-flex();
+}
