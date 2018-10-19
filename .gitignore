@@ -1,5 +1,6 @@
 
 # For project folders
 .idea
+/node_modules/
 
 *.min.min.*
