@@ -45,11 +45,13 @@
 
   background-color: rgba(255, 0, 255, .2);
 
-  &__nav {
+}
 
-    &__link {
-      display: block;
-    }
+.aside-nav {
+
+  &__link {
+    display: inline-block;
+    width: 100%;
   }
 }
 
