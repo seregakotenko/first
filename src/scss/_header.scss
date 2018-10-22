@@ -16,7 +16,11 @@
 
   &__item {
     @include col();
-    @include size(3);
+    @include size(12);
+    @include size-xs(6);
+    @include size-sm(3);
+    //@include size-md(3);
+    //@include size-lg(3);
 
     background-color: rgba(255, 255, 0, 1);
   }
