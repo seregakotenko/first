@@ -3,11 +3,11 @@
 //
 
 .main {
-  @include size-lg(9);
-  @include size-md(9);
-  @include size-xs(12);
-  @include size(9);
   @include col();
+  @include size(12);
+  @include size-xs(9);
+  //@include size-md(9);
+  //@include size-lg(9);
 
   background-color: rgba(0, 255, 255, .2);
 }
