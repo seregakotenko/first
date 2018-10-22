@@ -8,32 +8,28 @@ var settings = {
     filename: "_smart-grid",
     outputStyle: 'scss', /* less || scss || sass || styl */
     columns: 12, /* number of grid columns */
-    offset: '30px', /* gutter width px || % || rem */
+    offset: '15px', /* gutter width px || % || rem */
     mobileFirst: true, /* mobileFirst ? 'min-width' : 'max-width' */
     container: {
         maxWidth: '1150px', /* max-width оn very large screen */
-        fields: '30px' /* side fields */
+        fields: '2%' /* side fields */
     },
     breakPoints: {
         lg: {
             width: '1200px', /* -> @media (max-width: 1100px) */
+            //fields: '15px'
         },
         md: {
             width: '992px',
-            container: {
-                maxWidth: '960px', /* max-width оn very large screen */
-                fields: '30px' /* side fields */
-            }
+            //fields: '15px'
         },
         sm: {
             width: '768px',
-            maxWidth: '720px',
             fields: '15px' /* set fields only if you want to change container.fields */
         },
         xs: {
             width: '576px',
-            maxWidth: '540px',
-            fields: '2%'
+            //fields: '2%'
         }
         /*
         We can create any quantity of break points.
