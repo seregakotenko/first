@@ -12,6 +12,19 @@
   background-color: rgba(0, 255, 255, .2);
 }
 
+.article-list {
+  @include row-flex();
+
+  &__item {
+    @include col();
+    @include size(12);
+    @include size-xs(6);
+    @include size-md(6);
+    @include size-lg(4);
+  }
+
+}
+
 .article {
   background-color: rgba(155, 155, 155, .2);
 }
