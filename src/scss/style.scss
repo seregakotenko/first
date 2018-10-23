@@ -1,8 +1,22 @@
 //
 // Common file
 //
+
+html {
+  /* задаем фолбек на системный шрифт*/
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.fonts-loaded {
+  /* добавляем кастомный шрифт по загрузке */
+  font-family: OpenSans, monospace;
+  font-size: 14px;
+}
+
 @import "smart-grid";
 @import "reset";
+@import "fonts";
 @import "layout";
 @import "header";
 @import "footer";
