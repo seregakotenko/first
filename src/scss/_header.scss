@@ -2,13 +2,13 @@
 // Header
 //
 
+.header-wrapper {
+  @include wrapper();
+}
+
 .header {
   color: green;
   background-color: rgba(0, 255, 0, .1);
-
-  &__wrapper {
-    @include wrapper();
-  }
 
   &__items {
     @include row-flex();
