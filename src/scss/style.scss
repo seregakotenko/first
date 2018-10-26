@@ -3,14 +3,14 @@
 //
 
 html {
-  /* задаем фолбек на системный шрифт*/
-  font-family: monospace;
+  /* задаем фолбек на системный шрифт */
+  font-family: sans-serif;
   font-size: 15px;
 }
 
 .fonts-loaded {
   /* добавляем кастомный шрифт по загрузке */
-  font-family: OpenSans, monospace;
+  font-family: OpenSans, sans-serif;
   font-size: 14px;
 }
 
