@@ -1,0 +1,30 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seregakotenko/first.git"
+  },
+  "author": "Kotenko Serhii",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seregakotenko/first/issues"
+  },
+  "homepage": "https://github.com/seregakotenko/first#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglifycss": "^1.1.0",
+    "smart-grid": "^2.1.2"
+  }
+}

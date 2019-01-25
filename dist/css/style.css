@@ -1,0 +1,254 @@
+@charset "UTF-8";
+
+html {
+  /* задаем фолбек на системный шрифт */
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.fonts-loaded {
+  /* добавляем кастомный шрифт по загрузке */
+  font-family: OpenSans, sans-serif;
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: inline-block;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../../src/fonts/Open_Sans/OpenSans-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../../src/fonts/Open_Sans/OpenSans-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../../src/fonts/Open_Sans/OpenSans-BoldItalic.ttf);
+  font-weight: bold;
+  font-style: italic;
+}
+
+.content {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+}
+
+.header-wrapper {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.header {
+  color: green;
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+.header__items {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+}
+
+.header__item {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  width: calc(100% - 15px);
+  background-color: yellow;
+}
+
+.logo__img {
+  min-height: 50px;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.footer__wrapper {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.aside {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  width: calc(100% - 15px);
+  background-color: rgba(255, 0, 255, 0.2);
+}
+
+.aside-nav__link {
+  display: inline-block;
+  width: 100%;
+}
+
+.main {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  width: calc(100% - 15px);
+  background-color: rgba(0, 255, 255, 0.2);
+}
+
+.article-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+}
+
+.article-list__item {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  width: calc(100% - 15px);
+}
+
+.article {
+  background-color: rgba(155, 155, 155, 0.2);
+}
+
+.debug {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+}
+
+.debug > div {
+  height: inherit;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.debug > div > div {
+  height: inherit;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+}
+
+.debug > div > div > div {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  width: calc(8.33333% - 15px);
+  height: inherit;
+  outline: 1px solid rgba(255, 150, 255, 0.3);
+  background: rgba(255, 150, 255, 0.3);
+}
+
+.debug,
+.debug > * {
+  pointer-events: none;
+}
+
+.red {
+  color: green;
+}
+
+@media screen and (min-width: 576px) {
+  .header__item {
+    width: calc(50% - 15px);
+  }
+
+  .aside {
+    width: calc(25% - 15px);
+  }
+
+  .main {
+    width: calc(75% - 15px);
+  }
+
+  .article-list__item {
+    width: calc(50% - 15px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .header-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .header__item {
+    width: calc(25% - 15px);
+  }
+
+  .footer__wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .debug > div {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .article-list__item {
+    width: calc(50% - 15px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .article-list__item {
+    width: calc(33.33333% - 15px);
+  }
+}
+/*# sourceMappingURL=style.css.map */
