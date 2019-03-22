@@ -8,7 +8,7 @@ html {
   font-size: 15px;
 }
 
-.fonts-loaded {
+html.fonts-loaded {
   /* добавляем кастомный шрифт по загрузке */
   font-family: OpenSans, sans-serif;
   font-size: 14px;
@@ -23,6 +23,7 @@ html {
 @import "aside";
 @import "main";
 @import "debug";
+//@import "balast";
 
 .red {
   color: green;
