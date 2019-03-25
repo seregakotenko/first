@@ -1,0 +1,28 @@
+//
+// Fonts
+//
+//
+@font-face {
+  font-family: Lato;
+  src: local(Lato), url(../../src/fonts/Lato/Lato-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"), url(../../src/fonts/Open_Sans/OpenSans-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"), url(../../src/fonts/Open_Sans/OpenSans-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"), url(../../src/fonts/Open_Sans/OpenSans-BoldItalic.ttf);
+  font-weight: bold;
+  font-style: italic;
+}

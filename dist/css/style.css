@@ -1,11 +1,12 @@
-html {
+body {
   font-family: sans-serif;
+  font-family: Lato, sans-serif;
   font-size: 15px;
 }
 
-html.fonts-loaded {
-  font-family: OpenSans, sans-serif;
-  font-size: 14px;
+body.fonts-loaded {
+  font-family: "Open Sans", sans-serif;
+  font-size: 19px;
 }
 
 body {
@@ -25,20 +26,26 @@ img {
 }
 
 @font-face {
-  font-family: OpenSans;
-  src: url(../../src/fonts/Open_Sans/OpenSans-Regular.ttf);
+  font-family: Lato;
+  src: local(Lato),url(../../src/fonts/Lato/Lato-Regular.ttf);
   font-weight: normal;
 }
 
 @font-face {
-  font-family: OpenSans;
-  src: url(../../src/fonts/Open_Sans/OpenSans-Bold.ttf);
+  font-family: "Open Sans";
+  src: local("Open Sans"),url(../../src/fonts/Open_Sans/OpenSans-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"),url(../../src/fonts/Open_Sans/OpenSans-Bold.ttf);
   font-weight: bold;
 }
 
 @font-face {
-  font-family: OpenSans;
-  src: url(../../src/fonts/Open_Sans/OpenSans-BoldItalic.ttf);
+  font-family: "Open Sans";
+  src: local("Open Sans"),url(../../src/fonts/Open_Sans/OpenSans-BoldItalic.ttf);
   font-weight: bold;
   font-style: italic;
 }
