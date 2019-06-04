@@ -73,8 +73,34 @@ function isInViewport(el) {
 /********** Lazy Load XT jQuery плагин ********/
 
 $.extend($.lazyLoadXT, {
-  edgeY: 300,
+  edgeY: 0,
   visibleOnly: false,
   forceLoad: false,
-  show: true
+  // show: true bxslidernext
+  updateEvent: 'load orientationchange resize scroll bxslidernext'
+});
+
+
+/********** bxslider ********/
+
+$('.bxslider').bxSlider({
+  mode: 'fade',
+  infiniteLoop: false,
+  hideControlOnEnd: true,
+  captions: true,
+  preloadImage: 'visible',
+  slideWidth: 265,
+  slideMargin: 20,
+  minSlides: 4,
+  maxSlides: 4,
+  moveSlides: 1,
+  pager: false,
+  adaptiveHeight: true,
+
+  onSlideNext: function($slideElement, oldIndex, newIndex) {
+    $(document).trigger('bxslidernext');
+    console.log($slideElement);
+    console.log(oldIndex);
+    console.log(newIndex);
+  }
 });
