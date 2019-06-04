@@ -22,8 +22,11 @@
 
 
 /******************/
+/* https://webformyself.com/otlozhennaya-zagruzka-izobrazhenij-5-texnik-lenivoj-zagruzki/ */
+/* https://codepen.io/rposbo/pen/ONmgVG */
 
 
+/*
 window.addEventListener('load', setLazy);
 window.addEventListener('load', lazyLoad);
 window.addEventListener('scroll', lazyLoad);
@@ -49,8 +52,8 @@ function lazyLoad() {
 }
 
 function cleanLazy() {
-    lazy = Array.prototype.filter.call(lazy, function (l) {
-        return l.getAttribute('data-src');
+    lazy = Array.prototype.filter.call(lazy, function (item) {
+        return item.getAttribute('data-src');
     });
 }
 
@@ -60,7 +63,18 @@ function isInViewport(el) {
     return (
       rect.bottom >= 0 &&
       rect.right >= 0 &&
-      rect.top + 100 <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.top - 100 <= (window.innerHeight || document.documentElement.clientHeight) &&
       rect.left <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }
+
+*/
+
+/********** Lazy Load XT jQuery плагин ********/
+
+$.extend($.lazyLoadXT, {
+  edgeY: 300,
+  visibleOnly: false,
+  forceLoad: false,
+  show: true
+});
