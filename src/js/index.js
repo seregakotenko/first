@@ -70,16 +70,20 @@ function isInViewport(el) {
 
 */
 
-/********** Lazy Load XT jQuery плагин ********/
+/********** be]Lazy.js плагин ********/
 
-$.extend($.lazyLoadXT, {
-  edgeY: 0,
-  visibleOnly: false,
-  forceLoad: false,
-  // show: true bxslidernext
-  updateEvent: 'load orientationchange resize scroll bxslidernext'
+let bLazy = new Blazy({
+  selector: '[data-src]',
+  loadInvisible: true,
+  saveViewportOffsetDelay: 0
 });
 
+/********** Lazy Load XT jQuery плагин ********/
+
+// $.extend($.lazyLoadXT, {
+//   edgeY: 0,
+//   visibleOnly: false
+// });
 
 /********** bxslider ********/
 
@@ -96,11 +100,4 @@ $('.bxslider').bxSlider({
   moveSlides: 1,
   pager: false,
   adaptiveHeight: true,
-
-  onSlideNext: function($slideElement, oldIndex, newIndex) {
-    $(document).trigger('bxslidernext');
-    console.log($slideElement);
-    console.log(oldIndex);
-    console.log(newIndex);
-  }
 });
