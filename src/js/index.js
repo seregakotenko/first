@@ -101,3 +101,7 @@ $('.bxslider').bxSlider({
   pager: false,
   adaptiveHeight: true,
 });
+
+$(document).ready(function () {
+
+});

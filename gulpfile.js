@@ -69,4 +69,4 @@ gulp.task('watch', function () {
 /**
  * Invoke default tasks
  */
-gulp.task('default', ['scss']);
+gulp.task('default', ['scss', 'watch']);

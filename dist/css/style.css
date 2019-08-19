@@ -95,6 +95,24 @@ img {
   min-height: 50px;
 }
 
+.skiptocontent {
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  transform: translateY(-40px);
+  padding: 6px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background: #BF1722;
+  transition: transform 1s ease-out;
+  z-index: 1000;
+}
+
+.skiptocontent:focus {
+  transform: translateY(0);
+  transition: transform .1s ease-in;
+}
+
 .footer {
   background-color: rgba(0,0,0,0.1);
 }
